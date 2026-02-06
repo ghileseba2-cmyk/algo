@@ -1,0 +1,22 @@
+ALGORITHM calc_lenght
+VAR
+    lenght:INTEGER
+    words:INTEGER
+    c:INTEGER
+    vow=INTEGER
+BEGIN
+    words=0
+    lenght=0
+    IF (c='.') THEN
+        lenght=lenght+1
+    END_IF
+    IF (c='') THEN
+    words=words+1
+    END_IF
+    IF (c='a' or c='c'or c='e'or c='i'or c='i' or c='u') THEN
+        vow=vow+1
+    END_IF
+    return(lenght);
+    return(words);
+    return(vow);
+END
