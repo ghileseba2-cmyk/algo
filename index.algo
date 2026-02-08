@@ -1,22 +1,21 @@
-ALGORITHM calc_lenght
+ALGORITHM twosets
 VAR
-    lenght:INTEGER
-    words:INTEGER
-    c:INTEGER
-    vow=INTEGER
+    set1:[3, 1, 7, 9];
+    set2:[2, 4, 1, 9, 3];
+    i,j:INTEGER;
+    sum1,sum2:INTEGER;
 BEGIN
-    words=0
-    lenght=0
-    IF (c='.') THEN
-        lenght=lenght+1
+    sum:=0
+    IF (set1[i]=set2[j]) THEN
+        return(correct);
+    else
+     sum=sum+set[i]  
+    END_FOR
+    IF (set2[j]=set1[i]) THEN
+        return(correct)
+        else
+        sum2=sum1+set2[j]
     END_IF
-    IF (c='') THEN
-    words=words+1
-    END_IF
-    IF (c='a' or c='c'or c='e'or c='i'or c='i' or c='u') THEN
-        vow=vow+1
-    END_IF
-    return(lenght);
-    return(words);
-    return(vow);
+
+    return(sum2)
 END
